@@ -4,11 +4,38 @@
 	<meta charset="UTF-8">
 	<title>Tic Tac Toe</title>
 	<link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-	<link href="styles/style.css">
+	<link href="styles/style.css" rel="stylesheet">
 </head>
 <body>
-	
+	<div class="container">
+		<h1> TIC TAC TOE </h1>
+		<div class="controls">
+			<p> Select your symbol: </p>
+			<button class="symbolBtn selected">X</button>
+			<button class="symbolBtn">O</button>
+			<span id="seperator"> | </span>
+			<button class="startBtn"> Start </button>
+		</div>
+		<div class="board">
+			<div class="cell" data-index="0"></div>
+			<div class="cell" data-index="1"></div>
+			<div class="cell" data-index="2"></div>
+			<div class="cell" data-index="3"></div>
+			<div class="cell" data-index="4"></div>
+			<div class="cell" data-index="5"></div>
+			<div class="cell" data-index="6"></div>
+			<div class="cell" data-index="7"></div>
+			<div class="cell" data-index="8"></div>
+		</div>
+		<div class="instructions">
+				<p class="during" id="humanTurn"> It's your turn</p>
+				<p class="during" id="aiTurn"> Nice try!</p>
+				<p class="during" id="draw"> It's a draw </p>
+				<p class="during" id="lost"> You lost! </p>
+				<p class="during" id="won"> You win! </p>
+		</div>
+	</div>
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
-	<script src="scripts/script"></script>
+	<script src="scripts/script.js"></script>
 </body>
 </html>
