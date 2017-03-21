@@ -1,0 +1,17 @@
+{
+  "name": "tictactoe",
+  "description": "",
+  "main": "index.html",
+  "authors": [
+    "mr.edizcelik@gmail.com <astroe.celik@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
