@@ -33,9 +33,6 @@ $('.startBtn').on('click', function() {
 		$this.addClass('blackened');
 		$('.symbolBtn').addClass("blackened");
 
-
-
-
 		//instantiate the ai player and set it as the autoPlayer
 		const aiPlayer = new AI();
 		globalObject.game = new Game(aiPlayer);
