@@ -69,6 +69,7 @@ p {
 			p {
 				margin: 0 10px 0 0;
 				color: $mediumBlue;
+				flex: 1 1;
 			}
 			.symbolBtn {
 				width: 45px;
@@ -184,3 +185,18 @@ p {
 	}
 }
 
+@media (max-width: 550px) {
+	h1 {
+		margin-bottom: 0px;
+	}
+	.container {
+		.board {
+			height: 300px;
+		}
+		.instructions {
+			p {
+				font-size: 2rem;
+			}
+		}
+	}
+}

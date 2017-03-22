@@ -77,7 +77,10 @@ p {
             align-items: baseline; }
     .container .controls p {
       margin: 0 10px 0 0;
-      color: #7E7EFF; }
+      color: #7E7EFF;
+      -webkit-box-flex: 1;
+          -ms-flex: 1 1;
+              flex: 1 1; }
     .container .controls .symbolBtn {
       width: 45px;
       border-color: #7E7EFF;
@@ -193,3 +196,11 @@ p {
       font-size: 4rem;
       color: ghostwhite;
       text-shadow: 0px 0 3px #00007e; }
+
+@media (max-width: 550px) {
+  h1 {
+    margin-bottom: 0px; }
+  .container .board {
+    height: 300px; }
+  .container .instructions p {
+    font-size: 2rem; } }
