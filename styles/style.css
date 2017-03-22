@@ -50,6 +50,24 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+  .container .score {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .container .score #finalScore {
+      -webkit-box-flex: 0.5;
+          -ms-flex: 0.5;
+              flex: 0.5;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
   .container .controls {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -79,6 +97,11 @@ p {
         color: #7E7EFF; }
       .container .controls .symbolBtn:nth-child(2) {
         margin-right: 5px; }
+      .container .controls .symbolBtn.blackened {
+        border-color: #dee3e0;
+        box-shadow: inset 0 0 25px white;
+        color: #7E7EFF;
+        cursor: default; }
     .container .controls .startBtn {
       width: 65px;
       height: 65px;
@@ -127,7 +150,7 @@ p {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      font-size: 5rem;
+      font-size: 4rem;
       cursor: pointer; }
       .container .board .cell[data-index="0"] {
         box-shadow: inset -10px -10px 3px -7.5px #C3CBC6; }

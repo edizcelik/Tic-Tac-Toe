@@ -53,6 +53,16 @@ p {
 .container {
 	display: flex;
 	flex-direction: column;
+	.score {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		#finalScore {
+			flex:0.5;
+			display: flex;
+			justify-content: space-around;
+		}
+	}
 	.controls {
 		display: flex;
 		align-items: baseline;
@@ -81,6 +91,12 @@ p {
 				}
 				&:nth-child(2) {
 					margin-right: 5px;
+				}
+				&.blackened {
+					border-color: lighten($pastelgray, 10%);
+					box-shadow: inset 0 0 25px lighten($pastelgray, 25%);
+					color: $mediumBlue;
+					cursor: default;
 				}
 			}
 		.startBtn {
@@ -120,7 +136,7 @@ p {
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			font-size: 5rem;
+			font-size: 4rem;
 			cursor: pointer;
 
 			&[data-index="0"] {
